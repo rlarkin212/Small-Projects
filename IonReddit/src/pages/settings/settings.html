@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Settings Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form (submit)="setDefaults()">
+    
+    <ion-list>
+    <ion-item>
+      <ion-label fixed >Category</ion-label>
+      <ion-select [(ngModel)]="category" name="category" >
+        <ion-option value="dota2">Dota2</ion-option>
+        <ion-option value="squaredcircle">Squared Circle</ion-option>
+        <ion-option value="bjj">Bjj</ion-option>
+        <ion-option value="nintendoswitch">Nintendo Switch</ion-option>
+        <ion-option value="3ds">3DS</ion-option>
+        <ion-option value="programming">Programming</ion-option>
+        <ion-option value="dankmemes">Dank Memes</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label fixed >Limit</ion-label>
+      <ion-select [(ngModel)]="limit" name="limit" >
+        <ion-option value="5">5</ion-option>
+        <ion-option value="10">10</ion-option>
+        <ion-option value="15">15</ion-option>
+        <ion-option value="20">25</ion-option>
+      </ion-select>
+    </ion-item>
+    <button ion-button block type="submit">Save Changes</button>
+  </ion-list>
+  
+  </form>
+
+
+
+</ion-content>
