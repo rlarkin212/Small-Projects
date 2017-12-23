@@ -6,11 +6,11 @@ print ("Hello, " + name, "Time to play hangman!")
 print("")
 time.sleep(1)
 
+word = input("Please Enter A Word : ")
+
 print ("Start guessing...")
 time.sleep(0.5)
 
-
-word = input("Please Enter A Word : ")
 guesses = ''
 turns = 10
 
