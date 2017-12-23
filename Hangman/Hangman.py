@@ -10,7 +10,7 @@ print ("Start guessing...")
 time.sleep(0.5)
 
 
-word = "secret"
+word = input("Please Enter A Word : ")
 guesses = ''
 turns = 10
 
